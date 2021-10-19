@@ -1,0 +1,43 @@
+.footer {
+  background-color: #27292d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-heading {
+  color: rgba(256, 256, 256, 0.5);
+}
+
+.footer-heading h2 {
+  font-weight: lighter;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-menu li {
+  padding: 1rem;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(256, 256, 256, 0.5);
+}
+.footer-email h4 {
+  color: var(--third-color);
+}
