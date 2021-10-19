@@ -7,17 +7,16 @@
 
   transition: 200ms;
   background-color: #2f3136;
-  width: 330px;
 }
 .card-container:hover {
   transition: 200ms;
   transform: scale(1.02);
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.1);
 }
 
 .card-image-container {
   height: 150px;
-  width: 330px;
+  width: 350px;
   display: flex;
   border: 1px solid white;
   border-bottom: none;
@@ -30,9 +29,12 @@
 
 .card-text-container {
   height: 250px;
-  width: 330px;
+  width: 350px;
   text-align: center;
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   border: 1px solid white;
   border-top: none;
@@ -44,13 +46,9 @@
 }
 
 .card-text-container p {
-  margin: 5px;
+  margin: 4px;
   color: whitesmoke;
   font-size: large;
-}
-
-.card-text-container button {
-  margin-top: 10px;
 }
 
 .card-text-container p span {

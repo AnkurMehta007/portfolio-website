@@ -29,7 +29,7 @@
   margin: 2.5px;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 900px) {
   .card-first {
     flex-direction: column;
   }

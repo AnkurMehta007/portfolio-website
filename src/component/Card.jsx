@@ -2,31 +2,39 @@ import React from "react";
 import "./card.css";
 import { Button } from "./Button";
 import { GoCreditCard } from "react-icons/go";
+import { IconContext } from "react-icons/lib";
+import { BsCloudDrizzle } from "react-icons/bs";
 
-function Card() {
+function Card({ img, heading, desc }) {
+  let icon = 0;
+  if (img === "credit") {
+    icon = <GoCreditCard />;
+  }
+
+  if (img === "weather") {
+    icon = <BsCloudDrizzle />;
+  }
+
   return (
     <>
-      <div className="card-container">
-        <div className="card-image-container">
-          {/* <img src="images/card.svg" alt="na" /> */}
-          <GoCreditCard style={{ fontSize: "130px" }} />
+      <IconContext.Provider value={{ color: "white", size: "130px" }}>
+        <div className="card-container">
+          <div className="card-image-container">{icon}</div>
+
+          <div className="card-text-container">
+            <h2>{heading}</h2>
+            <p>{desc}</p>
+            <p>
+              <span>Technologies:-</span> Html,Css,Javascript and react.
+            </p>
+            <a href="https://github.com/AnkurMehta007">
+              <Button buttonStyle="btn--outline" buttonSize="btn--medium">
+                Github
+              </Button>
+            </a>
+          </div>
         </div>
-        <div className="card-text-container">
-          <h2>Credit Card</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id iste
-            necessitatibus natus voluptas ullam ab architecto dolor, deserunt
-          </p>
-          <p>
-            <span>Technologies:-</span> Html,Css,Javascript and react.
-          </p>
-          <a href="https://github.com/AnkurMehta007">
-            <Button buttonStyle="btn--outline" buttonSize="btn--medium">
-              Github
-            </Button>
-          </a>
-        </div>
-      </div>
+      </IconContext.Provider>
     </>
   );
 }

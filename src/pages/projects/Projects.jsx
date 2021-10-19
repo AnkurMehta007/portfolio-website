@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../../component/Card";
 import "./project.css";
+import "./data";
+import { objOne, objTwo } from "./data";
 
 function Projects() {
   return (
@@ -9,13 +11,12 @@ function Projects() {
         <h1 className="card-tittle">PROJECTS</h1>
         <div className="card-wrapper">
           <div className="card-first">
-            <Card />
-            <Card />
-            <Card />
+            <Card {...objOne} />
+            <Card {...objTwo} />
           </div>
           <div className="card-second">
-            <Card />
-            <Card />
+            {/* <Card />
+            <Card /> */}
           </div>
         </div>
       </div>
