@@ -6,7 +6,8 @@ import { IconContext } from "react-icons/lib";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const handleChange = () => setClick(!click);
+  const handleChange = () => setClick(false);
+  const handleChangeToggle = () => setClick(!click);
   const [showBackground, setShowBackground] = useState([true, false, false]);
 
   return (
@@ -19,7 +20,7 @@ function Navbar() {
               <h1>Ank</h1>
             </Link>
             <Link to="#">
-              <div className="toggleButton" onClick={handleChange}>
+              <div className="toggleButton" onClick={handleChangeToggle}>
                 {click ? <FaTimes /> : <FaBars />}
               </div>
             </Link>

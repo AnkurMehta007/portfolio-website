@@ -50,6 +50,10 @@
 }
 .about-text-container {
   margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .about-text-container p {
   background-color: var(--second-color);
@@ -58,6 +62,15 @@
   color: var(--secondry-color);
   font-size: large;
   padding: 1rem;
+}
+.about-text-container a {
+  text-decoration: none;
+}
+
+.about-text-container button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 960px) {

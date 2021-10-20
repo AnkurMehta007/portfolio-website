@@ -103,4 +103,7 @@
     margin: 0%;
     padding: 0;
   }
+  .image-animation {
+    animation: none;
+  }
 }

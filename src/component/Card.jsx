@@ -5,7 +5,7 @@ import { GoCreditCard } from "react-icons/go";
 import { IconContext } from "react-icons/lib";
 import { BsCloudDrizzle } from "react-icons/bs";
 
-function Card({ img, heading, desc }) {
+function Card({ img, heading, desc, technologies, repolink }) {
   let icon = 0;
   if (img === "credit") {
     icon = <GoCreditCard />;
@@ -25,9 +25,9 @@ function Card({ img, heading, desc }) {
             <h2>{heading}</h2>
             <p>{desc}</p>
             <p>
-              <span>Technologies:-</span> Html,Css,Javascript and react.
+              <span>Technologies:-</span> {technologies}
             </p>
-            <a href="https://github.com/AnkurMehta007">
+            <a href={repolink}>
               <Button buttonStyle="btn--outline" buttonSize="btn--medium">
                 Github
               </Button>
