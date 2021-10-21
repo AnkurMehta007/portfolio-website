@@ -22,7 +22,10 @@ function HeroSection({ heading1, heading2, img, imgStart, bgDark }) {
           </div>
           <div className="image-wrapper">
             <div className="image-content image-animation">
-              <img src="../images/webDev.svg" alt="hello"></img>
+              <p>
+                {" "}
+                <img src={img} alt="hello"></img>
+              </p>
             </div>
           </div>
         </div>
