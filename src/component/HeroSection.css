@@ -29,7 +29,7 @@
 }
 
 .text-wrapper {
-  color: aliceblue;
+  color: var(--secondry-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@
 }
 .image-wrapper {
   padding: 0px 3rem;
-  color: aliceblue;
+  color: var(--secondry-color);
   display: flex;
   align-items: center;
   justify-content: center;
