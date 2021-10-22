@@ -2,7 +2,12 @@ import React from "react";
 import "./HeroSection.css";
 import { motion } from "framer-motion";
 
-function HeroSection({ heading1, heading2, img, imgStart, bgDark }) {
+function HeroSection({ heading1, heading2, img, imgStart, bgDark, name }) {
+  const spanReturn = () => {
+    if (name === true) {
+      return <span>Ankur.</span>;
+    }
+  };
   return (
     <>
       <div
@@ -13,6 +18,7 @@ function HeroSection({ heading1, heading2, img, imgStart, bgDark }) {
             <div className="text-content">
               <h1>
                 {heading1}
+                {spanReturn()}
 
                 <br />
                 {heading2}

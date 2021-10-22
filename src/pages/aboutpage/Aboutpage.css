@@ -17,13 +17,20 @@
   text-align: center;
   background-color: var(--second-color);
   margin: 1rem;
+  margin-top: 2rem;
 }
 .about-upper h2 {
-  font-size: larger;
+  font-size: 40px;
+  font-weight: 90;
   margin-bottom: 7px;
 }
+.about-upper h2 span {
+  font-family: "Dancing Script", cursive;
+  color: var(--third-color);
+  font-size: 50px;
+}
 .about-upper p {
-  font-size: large;
+  font-size: 20px;
 }
 .about-lower {
   width: 100%;
@@ -60,7 +67,7 @@
 
   max-width: 600px;
   color: var(--secondry-color);
-  font-size: large;
+  font-size: 20px;
   padding: 1rem;
 }
 .about-text-container a {
@@ -71,6 +78,21 @@
   margin-top: 10px;
   display: flex;
   align-items: center;
+}
+.animation {
+  animation: slide-up 1s 1 ease;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 960px) {
@@ -85,8 +107,8 @@
     background-color: transparent;
   }
   .about-image-container img {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
   }
   .about-text-container {
     margin: 1rem;

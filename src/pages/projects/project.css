@@ -10,6 +10,8 @@
   color: white;
   font-size: 70px;
   margin-top: 1rem;
+  font-weight: 100;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .card-wrapper {

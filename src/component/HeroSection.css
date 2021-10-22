@@ -36,9 +36,16 @@
   padding: 0px 3rem;
   margin-left: 20px;
 }
+.text-wrapper h1 {
+  font-size: 35px;
+  font-weight: 90;
+  animation: slide-up 1s 1 ease;
+}
 
 .text-wrapper span {
   color: var(--third-color);
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
 }
 .image-wrapper {
   padding: 0px 3rem;
@@ -52,9 +59,7 @@
 .image-content img {
   width: 300px;
   height: 300px;
-}
-.image-animation {
-  animation: float 4s ease-in-out infinite;
+  animation: slide-up 1s 1 ease;
 }
 
 @keyframes float {
@@ -66,6 +71,30 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -105,5 +134,10 @@
   }
   .image-animation {
     animation: none;
+  }
+
+  .text-wrapper h1 {
+    font-size: 35px;
+    font-weight: 300;
   }
 }

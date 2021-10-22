@@ -8,15 +8,17 @@ function Aboutpage() {
     <>
       <div className="first-about">
         <div className="about-main-container">
-          <div className="about-upper">
-            <h2>Hi, I'm Ankur Mehta!</h2>
+          <div className="about-upper animation">
+            <h2>
+              Hi, I'm <span>Ankur Mehta!</span>
+            </h2>
 
             <p>
-              I am from Punjab. I have recently completed my B.Tech degree in
-              computer science from Guru Nanak Dev universty.
+              I am from Punjab (India). I have recently completed my B.Tech
+              degree in computer science from Guru Nanak Dev universty.
             </p>
           </div>
-          <div className="about-lower">
+          <div className="about-lower animation">
             <div className="about-image-container">
               <img src="images/reading.svg" alt="hello" />
             </div>
