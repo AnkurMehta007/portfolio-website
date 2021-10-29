@@ -14,17 +14,17 @@ function Footer() {
           </div>
           <ul className="footer-menu">
             <li>
-              <a href="https://www.linkedin.com/in/ankur9517/">
+              <a href="https://www.linkedin.com/in/ankur9517/" target=" ">
                 <FaLinkedin />
               </a>
             </li>
             <li>
-              <a href="https://github.com/AnkurMehta007">
+              <a href="https://github.com/AnkurMehta007" target=" ">
                 <FaGithub />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/ankur___mehta/">
+              <a href="https://www.instagram.com/ankur___mehta/" target=" ">
                 <FaInstagram />
               </a>
             </li>

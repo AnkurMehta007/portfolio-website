@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../../component/Card";
 import "./project.css";
 import "./data";
-import { objOne, objTwo } from "./data";
+import { objOne, objTwo, objThree } from "./data";
 import Card2 from "../../component/Card2";
 
 function Projects() {
@@ -16,11 +16,9 @@ function Projects() {
             <Card {...objTwo} /> */}
             <Card2 {...objOne} />
             <Card2 {...objTwo} />
+            <Card2 {...objThree} />
           </div>
-          <div className="card-second">
-            {/* <Card />
-            <Card /> */}
-          </div>
+          <div className="card-second"></div>
         </div>
       </div>
     </>
