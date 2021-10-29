@@ -11,9 +11,9 @@
 }
 
 .btn--outline {
-  background-color: var(--second-color);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
   transition: all 0.3s ease-out;
 }
 
@@ -31,8 +31,8 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background: var(--third-color);
-  color: #242424;
+  background: black;
+  color: white;
 }
 
 .btn-link {
