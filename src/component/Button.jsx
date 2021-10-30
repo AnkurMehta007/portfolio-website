@@ -18,11 +18,11 @@ export function Button({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
-    : SIZES[0];
+    : STYLES[0];
 
   const checkButtonColor = COLORS.includes(buttonColor)
     ? buttonColor
-    : SIZES[0];
+    : COLORS[0];
 
   console.log(children, type, buttonStyle, buttonSize, buttonColor, onClick);
 

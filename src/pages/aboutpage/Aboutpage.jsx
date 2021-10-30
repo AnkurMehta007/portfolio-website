@@ -38,7 +38,7 @@ function Aboutpage() {
                 </p>
               </div>
               <a href="./resume.doc" download="ankur_resume">
-                <Button buttonStyle="btn--outline" buttonSize="btn--large">
+                <Button buttonSize="btn--large">
                   <MdDownload style={{ fontSize: "25px" }} />
                   Resume
                 </Button>

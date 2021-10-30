@@ -5,6 +5,7 @@
   position: relative;
   transform-style: preserve-3d;
   border-radius: 10px;
+  user-select: none;
 }
 
 .front {
