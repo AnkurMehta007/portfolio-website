@@ -7,11 +7,25 @@
 }
 
 .project-card-conatiner .card-tittle {
-  color: white;
+  background: linear-gradient(
+    to right,
+    #ff5757,
+    #ffb53f,
+    #fff100,
+    #9ae900,
+    #816aff,
+    #ff0040
+  );
+  color: #2f3136;
+
   font-size: 70px;
   margin-top: 1rem;
   font-weight: 100;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.2em;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-stroke: 0.1em transparent;
 }
 
 .card-wrapper {
